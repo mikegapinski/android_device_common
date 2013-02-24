@@ -45,5 +45,14 @@ include $(BUILD_SHARED_LIBRARY)
 ifeq ($(TARGET_PRODUCT), full_smultron)
     include $(LOCAL_PATH)/conf/semc/smultron/Android.mk
 endif
+ifeq ($(TARGET_PRODUCT), full_mango)
+    include $(LOCAL_PATH)/conf/semc/mango/Android.mk
+endif
+ifeq ($(TARGET_PRODUCT), full_coconut)
+    include $(LOCAL_PATH)/conf/semc/coconut/Android.mk
+endif
+ifeq ($(TARGET_PRODUCT), full_satsuma)
+    include $(LOCAL_PATH)/conf/semc/satsuma/Android.mk
+endif
 
 #endif # BOARD_HAVE_BLUETOOTH_BCM
