@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(BOARD_HAVE_BLUETOOTH_BCM),)
+#ifneq ($(BOARD_HAVE_BLUETOOTH_BCM),)
 
 include $(CLEAR_VARS)
 
@@ -42,5 +42,8 @@ endif
 ifeq ($(TARGET_PRODUCT), full_wingray)
     include $(LOCAL_PATH)/conf/moto/wingray/Android.mk
 endif
+ifeq ($(TARGET_PRODUCT), full_smultron)
+    include $(LOCAL_PATH)/conf/semc/smultron/Android.mk
+endif
 
-endif # BOARD_HAVE_BLUETOOTH_BCM
+#endif # BOARD_HAVE_BLUETOOTH_BCM
