@@ -57,5 +57,8 @@ endif
 ifeq ($(TARGET_PRODUCT), full_anzu)
     include $(LOCAL_PATH)/conf/semc/anzu/Android.mk
 endif
+ifeq ($(TARGET_PRODUCT), full_haida)
+    include $(LOCAL_PATH)/conf/semc/anzu/Android.mk
+endif
 
 #endif # BOARD_HAVE_BLUETOOTH_BCM
